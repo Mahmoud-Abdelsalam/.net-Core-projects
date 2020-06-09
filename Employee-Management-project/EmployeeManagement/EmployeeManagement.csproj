@@ -2,6 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
+    <!--The value of InProcess specifies that we want to use in-process hosting model
+    i.e host our asp.net core app inside of the IIS worker process (w3wp.exe). 
+    The value of OutOfProcess specifies that we want to use out-of-process hosting model i.e forward
+    web requests to a back-end ASP.NET Core app running the Kestrel server.-->
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
     <UserSecretsId>4ddc6f8b-7b04-4182-a213-c650e8989da8</UserSecretsId>
   </PropertyGroup>
@@ -17,7 +21,19 @@
   </ItemGroup>
 
   <ItemGroup>
+    <!--As the name implies, this element is used to include a reference
+    to all the NuGet packages that are installed for your application.
+    At the moment in the project file we have the following 2 NuGet packages.
+    Microsoft.AspNetCore.App 
+    Microsoft.AspNetCore.Razor.Design-->
+
+    <!--Microsoft.AspNetCore.App : This NuGet package is called metapackage.
+    A metapackage has no content of its own but is a list of dependencies (other packages). 
+    You can find this metapackage, in the Solution Explorer, under NuGet which in turn is under Dependencies.
+    When you expand the metapackage, you can find all the dependencies.-->
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <!--Microsoft.AspNetCore.Razor.Design : This package contains MSBuild 
+    support for Razor and is referenced by Microsoft.AspNetCore.App meta package.-->
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.4" />
     <PackageReference Include="NLog.Web.AspNetCore" Version="4.9.2" />

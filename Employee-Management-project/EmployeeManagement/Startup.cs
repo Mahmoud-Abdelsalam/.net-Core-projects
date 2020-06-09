@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 using EmployeeManagement.Models;
 using EmployeeManagement.Security;
 using Microsoft.AspNetCore.Authorization;
@@ -14,14 +10,15 @@ using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 
 namespace EmployeeManagement
 {
     public class Startup
     {
         private readonly IConfiguration _config;
-
+        //Startup class does the following 2 very important things
+        //ConfigureServices() method configures services required by the application
+        // Configure() method sets up the application's request processing pipeline
         public Startup(IConfiguration config)
         {
             _config = config;

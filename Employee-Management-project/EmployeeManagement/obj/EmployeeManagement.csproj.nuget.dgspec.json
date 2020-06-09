@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Web\\.NET Core MVC Projects\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.csproj": {}
+    "D:\\Web\\My-Github\\.net-core-projects\\Employee-Management-project\\EmployeeManagement\\EmployeeManagement.csproj": {}
   },
   "projects": {
-    "D:\\Web\\.NET Core MVC Projects\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.csproj": {
+    "D:\\Web\\My-Github\\.net-core-projects\\Employee-Management-project\\EmployeeManagement\\EmployeeManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Web\\.NET Core MVC Projects\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.csproj",
+        "projectUniqueName": "D:\\Web\\My-Github\\.net-core-projects\\Employee-Management-project\\EmployeeManagement\\EmployeeManagement.csproj",
         "projectName": "EmployeeManagement",
-        "projectPath": "D:\\Web\\.NET Core MVC Projects\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.csproj",
+        "projectPath": "D:\\Web\\My-Github\\.net-core-projects\\Employee-Management-project\\EmployeeManagement\\EmployeeManagement.csproj",
         "packagesPath": "C:\\Users\\Kimo Store\\.nuget\\packages\\",
-        "outputPath": "D:\\Web\\.NET Core MVC Projects\\EmployeeManagement\\EmployeeManagement\\obj\\",
+        "outputPath": "D:\\Web\\My-Github\\.net-core-projects\\Employee-Management-project\\EmployeeManagement\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

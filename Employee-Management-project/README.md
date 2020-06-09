@@ -10,8 +10,8 @@ the site designed with a beautiful design to give the user an awesome experience
 ###### Technoligies used
 
 1- MVC and repository design patterns
-2- Entity Framework
-3-.Net Core identity
+2- Entity Framework core for data access
+3-.Net Core identity for security
 4-CRUD operations
 5-SQL
 6-bootstrap
