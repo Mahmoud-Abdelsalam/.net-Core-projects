@@ -1,0 +1,71 @@
+﻿@model EmployeeManagement.ViewModels.LoginViewModel
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor;
+@{
+    ViewData["Title"] = "Login";
+}
+
+
+
+
+
+
+<div class="row ">
+    <div class="col-md-6">
+        <h1>Login User</h1>
+        <hr />
+        <div class="container ">
+
+            <form method="post" asp-route-returnUrl="@HttpContextAccessor.HttpContext.Request.Query["ReturnUrl"].ToString()" class="mb-5 mr-5" style="height: 24.3rem">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control form-control-lg" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password" class="control-label"></label>
+                    <input asp-for="Password" class="form-control form-control-sm" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="RememberMe" /> @Html.DisplayNameFor(model => model.RememberMe)
+
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Signin" class="btn btn-dark btn-lg" />
+
+                    <a asp-controller="Home" asp-action="Index" class="btn btn-outline-dark btn-lg ml-3">Back to List</a>
+                </div>
+                <div>
+                    <a  asp-action="ForgetPassword">Forget password ?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <h1>External Login</h1>
+        <hr />
+        @if (Model.ExternalLogins.Count == 0)
+        {
+            <div> No External Logins available</div>
+        }
+        else
+        {
+            <form method="post" asp-action="ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl">
+                <div>
+                    @foreach (var provider in Model.ExternalLogins)
+                    {
+                        <button type="submit" class="btn btn-outline-primary btn-lg m-4" name="provider" value="@provider.Name" title="Login using your @provider.DisplayName Account">
+                            @provider.DisplayName
+                        </button>
+                    }
+                </div>
+                
+            </form>
+        }
+    </div>
+</div>
+
+

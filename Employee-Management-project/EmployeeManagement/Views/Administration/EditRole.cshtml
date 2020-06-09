@@ -1,0 +1,53 @@
+﻿@model EmployeeManagement.ViewModels.EditRoleViewModel
+
+@{
+    ViewData["Title"] = "Edit Role";
+}
+
+<h1>Edit Role</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="EditRole" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Id" class="font-weight-bolder"></label>
+                <input asp-for="Id" class="form-control" disabled />
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RoleName" class="font-weight-bolder"></label>
+                <input asp-for="RoleName" class="form-control" />
+                <span asp-validation-for="RoleName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-info  btn-lg" />
+                <a asp-action="RolesList" class="btn btn-outline-secondary btn-lg">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="card text-center mb-5  " style="width: 30rem; margin: 0 auto; float: none;">
+    <div class="card-header font-weight-bolder">
+        <h3> The users in this role</h3> 
+    </div>
+    <div class="card-body">
+        @if (Model.Users.Any())
+        {
+            foreach (var user in Model.Users)
+            {
+                <h4 class="card-title">@user</h4>
+            }
+            
+        }
+        else
+        {
+            <h4 class="card-title"> No users in this  role at a moment</h4>
+        }
+    </div>
+    <div class="card-footer">
+        <a class="btn btn-info text-white" asp-controller="Administration" asp-action="EditRoleUser" asp-route-roleId="@Model.Id"> Edit Users</a>
+        
+    </div>
+</div>

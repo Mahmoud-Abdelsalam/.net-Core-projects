@@ -1,0 +1,71 @@
+﻿/*.btn {
+        width: 75px;
+    }*/
+.img-size {
+    width: 260px;
+    height: 300px;
+}
+.img-details-size {
+    width: auto;
+    height: 500px;
+
+}
+
+body {
+    background-image: url('../images/architecture-black-and-white-building-business-273209.jpg');
+    background-repeat:  no-repeat;
+    background-size : cover ;
+    background-attachment: fixed;
+
+
+}
+.navbar {
+    border-bottom: #6FBAFD 2px solid;
+    opacity: 0.9;
+}
+
+.dark-overlay {
+    position:page;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    padding-bottom: 100px;
+    
+}
+.card {
+    background: rgba(104, 104, 104, 0.2);
+}
+.card-header {
+    color: #686868;
+    background: #E1E1E1;
+    background: rgba(104, 104, 104, 0.6);
+}
+.card-footer {
+    background: #E1E1E1;
+    background: rgba(104, 104, 104, 0.6);
+}
+.card-body {
+    background: #E1E1E1;
+    background: rgba(104, 104, 104, 0.4);
+}
+
+
+h1,label , .btn , h3{
+    color: #e1e1e1;
+}
+
+input ,select, .form-control-lg , .custom-file{
+    opacity: .8
+}
+
+.form-check-label {
+    color: #686868
+}
+
+h4 {
+    color: aliceblue;
+    
+}
+

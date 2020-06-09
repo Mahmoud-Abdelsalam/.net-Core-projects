@@ -1,0 +1,40 @@
+﻿@inject SignInManager<ApplicationUser> SignInManager;
+@model HomeDetailsViewModel;
+@{
+    ViewBag.Title = "Home Details";
+    var photoPath = "~/images/" + (Model.Employee.PhotoPath ?? "mystery-face-png-1.png");
+
+}
+@*<h3>@Model.PageTitle</h3>*@
+
+<div class="row justify-content-center m-3">
+    <div class="col-sm-8">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="lead display-4 text-white">@Model.Employee.Name</h2>
+            </div>
+
+            <div class="card-body text-center ">
+                <img class="card-img-top img-details-size mb-3" style="width: 450px" src=@photoPath asp-append-version="true" />
+                <h4>Employee ID : @Model.Employee.Id</h4>
+                <h4>Email : @Model.Employee.Email</h4>
+                <h4>Department : @Model.Employee.Department</h4>
+            </div>
+            <div class="card-footer text-center">
+                <a asp-controller="Home" asp-action="Index" class="btn btn-outline-primary btn-lg">Back</a>
+                @if (SignInManager.IsSignedIn(User) && (User.IsInRole("Admin")  || User.IsInRole("Super Admin")))
+            {
+                <a class="btn btn-outline-primary btn-lg" asp-controller="home" asp-action="edit" asp-route-id=@Model.Employee.Id>Edit</a>
+                <a asp-action="Delete" asp-route-id="@Model.Employee.Id" class="btn btn-outline-danger btn-lg">Delete</a>
+            }
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+
+    <script src="~/js/CustomScript.js"></script>
+}

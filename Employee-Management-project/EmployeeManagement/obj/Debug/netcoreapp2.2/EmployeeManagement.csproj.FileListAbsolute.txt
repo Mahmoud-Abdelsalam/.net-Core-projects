@@ -1,0 +1,112 @@
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.2\EmployeeManagement.deps.json
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.2\EmployeeManagement.runtimeconfig.json
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.2\EmployeeManagement.runtimeconfig.dev.json
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.2\EmployeeManagement.dll
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.2\EmployeeManagement.pdb
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.csprojAssemblyReference.cache
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.RazorAssemblyInfo.cache
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.RazorAssemblyInfo.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.AssemblyInfoInputs.cache
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.AssemblyInfo.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.RazorTargetAssemblyInfo.cache
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.dll
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.pdb
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.2\EmployeeManagement.Views.dll
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.2\EmployeeManagement.Views.pdb
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.TagHelpers.input.cache
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.TagHelpers.output.cache
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.RazorCoreGenerate.cache
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.RazorTargetAssemblyInfo.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.Views.pdb
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.csproj.CopyComplete
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\Details.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\Create.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\Edit.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\EmployeeNotFound.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Shared\NotFound.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\Delete.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.csproj.CoreCompileInputs.cache
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.2\nlog.config
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Administration\CreateRole.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Administration\RolesList.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Administration\EditRole.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Administration\EditRoleUser.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Administration\UsersList.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Administration\EditUser.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Administration\EditUserRoles.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Administration\EditUserClaims.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Administration\AccessDenied.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Account\ConfirmEmail.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Account\ForgetPassword.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Account\ForgetPasswordConfirmation.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Account\ResetPassword.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Account\ResetPasswordConfirmation.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Account\ChangePassword.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Account\ChangePasswordConfirmation.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Account\AddPassword.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Account\AddPasswordConfirmation.g.cshtml.cs
+D:\ASP.NET Core\Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Account\AccountLocked.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.2\nlog.config
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.2\EmployeeManagement.deps.json
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.2\EmployeeManagement.runtimeconfig.json
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.2\EmployeeManagement.runtimeconfig.dev.json
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.2\EmployeeManagement.dll
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.2\EmployeeManagement.pdb
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.2\EmployeeManagement.Views.dll
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.2\EmployeeManagement.Views.pdb
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.csprojAssemblyReference.cache
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.csproj.CoreCompileInputs.cache
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.RazorAssemblyInfo.cache
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.RazorAssemblyInfo.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.AssemblyInfoInputs.cache
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.AssemblyInfo.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.TagHelpers.input.cache
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.TagHelpers.output.cache
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.RazorCoreGenerate.cache
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Account\AccountLocked.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Account\AddPassword.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Account\AddPasswordConfirmation.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Account\ChangePassword.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Account\ChangePasswordConfirmation.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Account\ConfirmEmail.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Account\ForgetPassword.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Account\ForgetPasswordConfirmation.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Account\ResetPassword.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Account\ResetPasswordConfirmation.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Administration\AccessDenied.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Administration\CreateRole.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Administration\EditRole.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Administration\EditRoleUser.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Administration\EditUser.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Administration\EditUserClaims.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Administration\EditUserRoles.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Administration\RolesList.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Administration\UsersList.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\Create.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\Delete.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\Details.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\Edit.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\EmployeeNotFound.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Shared\NotFound.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.RazorTargetAssemblyInfo.cache
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.RazorTargetAssemblyInfo.cs
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.Views.pdb
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.dll
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.pdb
+D:\Web\.NET Core MVC Projects\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.csproj.CopyComplete
