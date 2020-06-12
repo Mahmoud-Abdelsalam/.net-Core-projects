@@ -2,7 +2,7 @@
 
 ## Project description
 
-It's an employee system management allowing managers, employees and users to communicate together, organized by roles, claims, policy to handle the authorities, contain full login system with email login external providers (FACEBOOK, GOOGLE) option with email confirmation security and the availabilty of forgetting password and more.
+It's an employee management application allowing managers, employees and users to communicate together, organized by roles, claims, policy to handle the authorities, contain full login system with email login external providers (FACEBOOK, GOOGLE) option with email confirmation security and the availabilty of forgetting password and more.
 
 the site designed with a beautiful design to give the user an awesome experience.
 
