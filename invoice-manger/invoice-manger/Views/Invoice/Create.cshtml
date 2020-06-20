@@ -1,0 +1,178 @@
+﻿@using invoice_manger.Model
+@model invoice_manger.Model.Invoice
+
+@{
+    ViewData["Title"] = "Create";
+}
+@*@{
+    var InId = ViewBag.InId;
+}*@
+<h1>Create New Invoice</h1>
+
+
+<hr />
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <form asp-action="Create" class="form-group" enctype="multipart/form-data" method="post">
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-row  mb-4" id="invoice-number">
+                            <label class="col-sm-3 col-form-label" asp-for="Id"> Invoice Number</label>
+                            <input asp-for="Id"  class="form-control form-control-lg col-sm-5" type="text" placeholder="Invoice No." value="@Model.Id" disabled>
+                        </div>
+
+
+                        <label class="col-sm-3 col-form-label mb-3" asp-for="Store"> Store</label>
+                        <select asp-for="Store" asp-items="Html.GetEnumSelectList<Store>()" class="btn btn-light mb-2">
+                            <option value="" selected disabled hidden>Please Select Store</option>
+                        </select>
+
+
+                    </div>
+                    <div class="col">
+                        <div class="form-row" id="invoice-date">
+                            <label class="col-sm-3 col-form-label" for="Invoice-no"> Invoice Date</label>
+                            <input class="form-control form-control-lg col-sm-5"  type="text" placeholder="Invoice Date" value="@DateTime.Now" asp-for="Date">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Item
+                                    </th>
+                                    <th>
+                                        Unit
+                                    </th>
+                                    <th>
+                                        Price
+                                    </th>
+                                    <th>
+                                        Qty
+                                    </th>
+                                    <th>
+                                        Total
+                                    </th>
+                                    <th>
+                                        Discount
+                                    </th>
+                                    <th>
+                                        Net
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="record-list">
+                            
+                            <tr class="row-0">
+                                <td>
+                                    <div class="form-group ">
+                                        <select asp-for="RecordList[0].Item" asp-items="Html.GetEnumSelectList<Item>()" class="btn btn-light " id="item-0" style="width: 90px">
+                                            <option value="" selected disabled hidden>Please Select item</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <select asp-for="RecordList[0].Unit" asp-items="Html.GetEnumSelectList<Unit>()" class="btn btn-light  " id="unit-0" style="width: 90px">
+                                            <option value="" selected disabled hidden>Please Select Unit</option>
+                                        </select>
+                                        <span asp-validation-for="RecordList[0].Unit" class="text-danger"></span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input asp-for="RecordList[0].Price" type="text" class="form-control" id="price-0" onkeyup="Calculate(0)"/>
+                                        <span asp-validation-for="RecordList[0].Price" class="text-danger"></span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input asp-for="RecordList[0].Qty" type="text" class="form-control" id="qty-0" onkeyup="Calculate(0)"/>
+                                        <span asp-validation-for="RecordList[0].Qty" class="text-danger"></span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input asp-for="RecordList[0].Total" type="text" class="form-control" id="total-0" />
+                                        <span asp-validation-for="RecordList[0].Total" class="text-danger"></span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input asp-for="RecordList[0].Discount" type="text" class="form-control" placeholder="% of Dis" id="discount-0" onkeyup="Calculate(0)"/>
+                                        <span asp-validation-for="RecordList[0].Discount" class="text-danger"></span>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="form-group">
+                                        <input asp-for="RecordList[0].Net" type="text" class="form-control" id="net-0" />
+                                        <span asp-validation-for="RecordList[0].Net" class="text-danger"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="form-group col-md-1">
+                        <input type="button"  value="Add" class="form-control btn btn-dark  " id="add-btn" style="margin-left: 20px"  />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8">
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="total-tax-net">
+                            <div class="form-row mb-3">
+                                <label class="col-sm-2 col-form-label" for="" asp-for="TotalInvoice" > Total</label>
+                                <input class="form-control form-control-lg col-sm-5" type="text" placeholder="Total" asp-for="TotalInvoice" id="total-invoice" >
+                            </div>
+                            <div class="form-row mb-3">
+                                <label class="col-sm-2 col-form-label" asp-for="TotalTaxes"> Taxes</label>
+                                <input class="form-control form-control-lg col-sm-5" type="text" placeholder="Taxes %" asp-for="TotalTaxes" id="total-taxes">
+                            </div>
+                            <div class="form-row mb-3">
+                                <label class="col-sm-2 col-form-label" asp-for="TotalNet">Net</label>
+                                <input class="form-control form-control-lg col-sm-5" type="text" placeholder="Net" asp-for="TotalNet" id="total-net" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="save-delete">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group col-md-4  " style="margin-left: auto; margin-top: 25px">
+                                <input type="submit" name="name" value="Save" class="form-control btn btn-dark  btn-lg  " style="padding: -20px; "   />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+
+                            <button class="btn btn-danger btn-lg " style="margin-right: auto" id="delete-btn" asp-action="Index"> Delete </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+   
+@section scripts
+{
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/js/CustomScript.js" asp-append-version="true"></script>
+}

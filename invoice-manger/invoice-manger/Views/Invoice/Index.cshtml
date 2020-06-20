@@ -1,0 +1,53 @@
+﻿
+@model IEnumerable<invoice_manger.Model.Invoice>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+    <a asp-action="create" asp-controller="Invoice" class="btn btn-danger" id="create-btn" style="margin-bottom: 50px">Create New Invoice</a>
+    
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Store)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                Total Net
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Store)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TotalNet)
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>

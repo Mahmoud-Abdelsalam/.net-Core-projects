@@ -1,0 +1,50 @@
+btn {
+    width: 10px;
+}
+.container {
+    margin-top: 50px;
+}
+.section-1 {
+    margin-top: 100px;
+}
+
+#invoice-number {
+    margin-right: auto;
+}
+
+#invoice-date {
+    margin-left: auto;
+}
+
+
+.total-tax-net {
+    margin-top: 50px;
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+
+.save-delete {
+    margin-top: 50px;
+}
+
+#delete-btn {
+    margin: 20px;
+}
+
+#save-btn {
+    margin: 20px;
+}
+
+label {
+    font-weight: 600;
+}
+
+#store-drop-down {
+    margin: 30px;
+}
+
+#item-drop-down {
+    width: 70px;
+}
