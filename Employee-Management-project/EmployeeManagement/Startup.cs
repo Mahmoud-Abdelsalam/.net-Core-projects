@@ -102,6 +102,8 @@ namespace EmployeeManagement
                 app.UseStatusCodePagesWithReExecute("/Error/{0}");
                 app.UseExceptionHandler("/Error");
             }
+
+            app.UseDefaultFiles();
             app.UseStaticFiles();
             //app.UseMvcWithDefaultRoute();
             app.UseAuthentication();
