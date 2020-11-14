@@ -16,14 +16,16 @@ namespace EmployeeManagement.Controllers
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly ILogger<AccountController> _logger;
+        private readonly RoleManager<IdentityRole> _roleManager;
 
         public AccountController(UserManager<ApplicationUser> userManager,
                                             SignInManager<ApplicationUser> signInManager,
-                                            ILogger<AccountController> logger)
+                                            ILogger<AccountController> logger,RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
+            _roleManager = roleManager;
         }
 
         [AllowAnonymous]
@@ -344,7 +346,12 @@ namespace EmployeeManagement.Controllers
               var result = await _userManager.CreateAsync(user, model.Password);
               if (result.Succeeded)
               {
-                var token = await  _userManager.GenerateEmailConfirmationTokenAsync(user);
+                  if (user.UserName == "Admin@gmail.com")
+                  {
+                      IdentityResult roleResult = await _roleManager.CreateAsync(new IdentityRole("Admin"));
+                      result = await _userManager.AddToRoleAsync(user, "Admin");
+                  }
+                    var token = await  _userManager.GenerateEmailConfirmationTokenAsync(user);
                var confirmationLink = Url.Action("ConfirmEmail", "Account", 
                     new {userId = user.Id, token = token}, Request.Scheme);
                 _logger.Log(LogLevel.Warning, confirmationLink);
