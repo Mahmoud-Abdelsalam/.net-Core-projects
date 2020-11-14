@@ -1,0 +1,53 @@
+﻿@model IEnumerable<ShoppingSite.Models.Product>
+
+@{
+    ViewData["Title"] = "MyOrder";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 style="margin-top: 80px">My Order</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Product_Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+
+                <span>Image</span>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            var photoPath = "../images/" + @item.Id + ".jpg";
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Product_Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    <img src=@photoPath class='mx-auto img-thumbnail' style="border-radius: 20%; width: 60px; height: 50px;" />
+                </td>
+                <td>
+
+                    <a class="btn btn-danger btn-sm" asp-controller="Order" asp-action="AddReview" asp-route-Id="@item.Id">Review</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

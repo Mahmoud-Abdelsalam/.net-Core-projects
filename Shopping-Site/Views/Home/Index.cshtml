@@ -1,0 +1,41 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model IEnumerable<ShoppingSite.Models.Product>
+@inject SignInManager<IdentityUser> SignInManager
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@foreach (var item in Model)
+{
+
+    var photoPath = "/images/" + @item.Id + ".jpg";
+    <div class='container-fluid'>
+        <div class="card mx-auto col-md-3 col-10 ">
+            <img class='mx-auto img-thumbnail' src=@photoPath style="border-radius: 70%" />
+            <div class="card-body text-center mx-auto">
+                <h5 class="card-title font-weight-bold"> @item.Product_Name</h5>
+                <p class="card-text">&#36;@item.Price</p>
+                @if (SignInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+                {
+                    <a class="btn btn-group-sm btn-warning mb-2" asp-action="Edit" asp-route-id="@item.Id">Update Item</a>
+                    <br />
+                    <a class="btn btn-outline-danger details px-auto  " asp-action="DeleteProduct" asp-route-id="@item.Id">Delete Item</a>
+                    <br />
+                    <br />
+                }
+                else if (SignInManager.IsSignedIn(User))
+                {
+                    <a class="btn btn-outline-info cart px-auto text-light" style="margin-bottom: 20px;" onclick="AddToCart(@item.Id)">ADD TO CART</a>
+                }
+                else
+                {
+                    <a class="btn btn-outline-info cart px-auto text-light" style="margin-bottom: 20px;" asp-controller="Account" asp-action="Login" asp-route-id="@item.Id">ADD TO CART</a>
+                }
+
+                <a class="btn btn-secondary details px-auto text-light" asp-action="Details" asp-route-id="@item.Id">View</a><br />
+            </div>
+        </div>
+    </div>
+}

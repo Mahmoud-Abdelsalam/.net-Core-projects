@@ -1,0 +1,53 @@
+﻿@model ShoppingSite.Models.Product
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var photoPath = "/images/" + Model.Id + ".jpg";
+}
+
+<div style="margin-top: 100px;">
+    <a asp-action="Index" class="bt btn-secondary btn-lg" style="margin-top: 200px;">Back to List</a>
+</div>
+<div class='container-fluid'>
+    <hr />
+    <div class="card mx-auto col-md-3 col-5 mt-5">
+        <img class='mx-auto img-thumbnail' src=@photoPath asp-append-version="true" style="border-radius: 70%" />
+        <div class="card-body text-center mx-auto">
+            <div class='cvp'>
+                <h5 class="card-title font-weight-bold"> @Model.Product_Name</h5>
+                <p class="card-text">&#36;@Model.Price</p>
+            </div>
+        </div>
+    </div>
+</div>
+<h3 class="mt-4" style="width: 50%; margin-left: 450px;">Users Reviews</h3>
+<hr />
+
+@if (Model.Reviews != null)
+{
+
+    @for (int i = 0; i < Model.Reviews.Count(); i++)
+    {
+        var collapse = "#collapse" + i;
+        var collapseId = "collapse" + i;
+        <div id="accordion" style="width: 50%; margin-right: auto; margin-left: auto;">
+            <div class="card">
+                <div class="card-header">
+                    <h5>
+                        <a href=@collapse data-parent="#accordion" data-toggle="collapse">
+                            @Model.Reviews[i].User.UserName;
+                        </a>
+                    </h5>
+                </div>
+
+                <div id=@collapseId class="collapse show">
+                    <div class="card-body">
+                        @Model.Reviews[i].UserReview;
+                    </div>
+                    <a type="button" class="btn btn-info ml-3">Edit</a>
+                    <a type="button" class="btn btn-danger">Delete</a>
+                </div>
+            </div>
+        </div>
+    }
+}
