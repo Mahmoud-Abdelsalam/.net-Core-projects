@@ -1,0 +1,115 @@
+﻿@using Base5.Domain.Enums
+@model Base5.Application.KPI.Models.KPIDto
+
+@{
+    ViewData["Title"] = "Manage";
+}
+
+<h1 style="text-align: center; background-color: darkslategray;" class="text-light mb-5 p-2">Survey System</h1>
+<h1 style="text-align: center; background-color: darkgray;" class="mt-5 p-2">Key Performance Indicator</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-12">
+
+        <form asp-controller="KPI" asp-action="Manage" id="myform">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group" style="width: 30%; margin: auto;">
+                <label asp-for="DepNo" class="control-label font-weight-bolder mt-5 mr-2"></label>
+                <select  asp-for="DepNo"  onchange="GetRows(this.value)"  asp-items="Html.GetEnumSelectList<Dep>()"class="btn btn-light  "  id="DepNo" >
+                    <option selected disabled hidden value="">Please select Department</option>
+                </select>
+                <span asp-validation-for="DepNo" class="text-danger"></span>
+            </div>
+
+            <input type="button" value="Add New Row" id="add-btn" class="btn btn-secondary m-3 text-light pl-5 pr-5" style="font-weight: bolder; font-size: 20px;" />
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr style="background-color: darkslategray; text-align: center;" class="text-light">
+                                <th>
+                                    Indicator Number
+                                </th>
+                                <th>
+                                    Indicatior Description
+                                </th>
+                                <th>
+                                    Measuring Unit
+                                </th>
+                                <th>
+                                    Targeted Value
+                                </th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td class="align-content-center">
+                                    <div class="form-group form-check  m-auto">
+                                        <label class="form-check-label">
+                                            <input id="perc" class="measure form-check-input " asp-for="MeasurmentUnit" onchange="CalcTotal();" /> @Html.DisplayNameFor(model => model.MeasurmentUnit) &nbsp; &nbsp; &nbsp;
+                                        </label>
+                                        <input id="num" type="checkbox" class=" measure  form-check-input" /> Number
+                                    </div>
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                        </thead>
+
+                        <tbody class="record-list" id="table_body">
+                            <tr class="row-0">
+                                <td>
+
+                                    <div class="form-group">
+                                        <input name="KPIDetails[0].KPIDNum" type="number"  data-valmsg-for="KPIDetails[0].KPIDNum" data-valmsg-replace="true"  class="form-control" required />
+                                        <span asp-validation-for="KPIDetails[0].KPIDNum" class="text-danger"></span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input  name="KPIDetails[0].KPIDDescription" data-valmsg-for="KPIDetails[0].KPIDDescription" data-valmsg-replace="true"  type="text" class="form-control" required/>
+                                        <span asp-validation-for="KPIDetails[0].KPIDDescription" class="text-danger"></span>
+
+                                    </div>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input id="targetvalue-0" name="KPIDetails[0].TargetValue" data-valmsg-for="KPIDetails[0].TargetValue" data-valmsg-replace="true"  type="number" onkeyup="CalcTotal();" class="form-control " required />
+                                        <span asp-validation-for="KPIDetails[0].TargetValue" class="text-danger"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td style="text-align: end; font-size: larger; font-weight: bolder;">Total : </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input class="total" disabled asp-for="Total" class="form-control"  /> <span id="percSpan" style="display: none;">%</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <span id="max" class="text-danger" style="display: none; text-align: center;">the maximum value for percentage value for same department is 100</span>
+                </div>
+            </div>
+
+            <div class="form-group" style="width: 40%; margin: auto; margin-top: 70px;">
+                <button type="button" class="btn btn-info btn-lg ml-5 text-light" @*onclick="reloadPage();"*@  id="New">New</button>
+                <button type="button" id="remove" class="btn btn-danger btn-lg ml-5 text-light">Delete</button>
+                <input id="submit" type="submit" value="Save" class="btn btn-primary btn-lg ml-5" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
